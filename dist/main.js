@@ -9,17 +9,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/arrays/map.js":
-/*!***************************!*\
-  !*** ./src/arrays/map.js ***!
-  \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ map)\n/* harmony export */ });\nfunction map(array, callback) {\n  var result = [];\n  var length = array.length;\n\n  for (var index = 0; index < length; index += 1) {\n    var value = array[index];\n    result[index] = callback(value, index, array);\n  }\n\n  return result;\n} // const arr = [1, 2, 3];\n// arr.map((number) => number * 5);\n\n//# sourceURL=webpack://custom-lodash/./src/arrays/map.js?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -27,7 +16,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _arrays_map__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./arrays/map */ \"./src/arrays/map.js\");\n\n\n\nfunction component() {\n  var element = document.createElement('div'); // Lodash, currently included via a script, is required for this line to work\n\n  element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default().join(['Hello', 'webpack'], ' ');\n  return element;\n}\n\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack://custom-lodash/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n\n\nfunction component() {\n  var element = document.createElement('div'); // Lodash, currently included via a script, is required for this line to work\n\n  element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default().join(['Hello', 'webpack'], ' ');\n  return element;\n}\n\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack://custom-lodash/./src/index.js?");
 
 /***/ }),
 

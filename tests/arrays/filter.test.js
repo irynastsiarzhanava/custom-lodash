@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-const filter = require('../src/arrays/map');
+const filter = require('../../src/arrays/map');
 
 test('filter should add the filtered elements to a new array and return that array', () => {
   const arr = [1, 2, 3, 4, 18, 28];
