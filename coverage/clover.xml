@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1629143229265" clover="3.2.0">
-  <project timestamp="1629143229265" name="All files">
-    <metrics statements="65" coveredstatements="53" conditionals="12" coveredconditionals="10" methods="20" coveredmethods="18" elements="97" coveredelements="81" complexity="0" loc="65" ncloc="65" packages="2" files="12" classes="12"/>
+<coverage generated="1629143893052" clover="3.2.0">
+  <project timestamp="1629143893052" name="All files">
+    <metrics statements="65" coveredstatements="65" conditionals="12" coveredconditionals="12" methods="20" coveredmethods="20" elements="97" coveredelements="97" complexity="0" loc="65" ncloc="65" packages="2" files="12" classes="12"/>
     <package name="arrays">
-      <metrics statements="45" coveredstatements="33" conditionals="10" coveredconditionals="8" methods="11" coveredmethods="9"/>
+      <metrics statements="45" coveredstatements="45" conditionals="10" coveredconditionals="10" methods="11" coveredmethods="11"/>
       <file name="chunk.js" path="/Users/Belka/RS/custom-lodash/src/arrays/chunk.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
@@ -39,23 +39,23 @@
         <line num="12" count="1" type="stmt"/>
       </file>
       <file name="includes.js" path="/Users/Belka/RS/custom-lodash/src/arrays/includes.js">
-        <metrics statements="7" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
+        <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="5" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
       </file>
       <file name="map.js" path="/Users/Belka/RS/custom-lodash/src/arrays/map.js">
-        <metrics statements="7" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
       </file>
       <file name="take.js" path="/Users/Belka/RS/custom-lodash/src/arrays/take.js">
