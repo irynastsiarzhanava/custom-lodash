@@ -1,4 +1,4 @@
-function take(array, num) {
+function drop(array, num) {
   if (num === undefined) {
     array.splice(0, 1);
     return array;
@@ -10,4 +10,4 @@ function take(array, num) {
   return array;
 }
 
-module.exports = take;
+module.exports = drop;
