@@ -14,7 +14,9 @@ function mySplice(array, index, count) {
       myPush(newArray, array[i]);
     }
   }
-  return newArray;
+  // eslint-disable-next-line no-param-reassign
+  array = newArray;
+  return array;
 }
 
 module.exports = mySplice;

@@ -1,7 +1,11 @@
+const mySplice = require('../shared/splice');
+const myPush = require('../shared/push');
+
 function chunk(array, size) {
   const results = [];
+
   while (array.length) {
-    results.push(array.splice(0, size));
+    myPush(results, array.splice(0, size));
   }
   return results;
 }
