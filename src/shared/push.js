@@ -1,7 +1,8 @@
-function push(array, value) {
+function myPush(array, value) {
+  const { length } = array;
   const newArr = array;
-  newArr[newArr.length] = value;
+  newArr[length] = value;
   return newArr;
 }
 
-module.exports = push;
+module.exports = myPush;
