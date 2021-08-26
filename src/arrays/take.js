@@ -1,10 +1,12 @@
+const myLength = require('../shared/length');
 const mySlice = require('../shared/slice');
 
 function take(array, num) {
+  const length = myLength(array);
   if (num === undefined) {
     return mySlice(array, 0, 1);
   }
-  if (num > array.length) {
+  if (num > length) {
     return array;
   }
   return mySlice(array, 0, num);

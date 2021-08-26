@@ -1,20 +1,24 @@
+const myLength = require('./length');
+const myPush = require('./push');
+
 /* eslint-disable no-param-reassign */
 function mySlice(array, start, end) {
   const data = array;
-  let stop = data.length - 1;
+  const length = myLength(array);
+  let stop = length - 1;
   const resultArr = [];
   if (start === undefined) {
     return resultArr;
   }
   if (start < 0) {
-    start += data.length;
+    start += length;
   }
   if (end !== undefined && end > 0) {
     stop = end - 1;
   }
   for (let index = start; index <= stop; index += 1) {
     const element = data[index];
-    resultArr.push(element);
+    myPush(resultArr, element);
   }
   return resultArr;
 }

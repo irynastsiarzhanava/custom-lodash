@@ -1,5 +1,7 @@
+const myLength = require('./length');
+
 function myPush(array, value) {
-  const { length } = array;
+  const length = myLength(array);
   const newArr = array;
   newArr[length] = value;
   return newArr;

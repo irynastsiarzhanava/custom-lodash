@@ -1,15 +1,14 @@
+const myLength = require('../shared/length');
+
 function compact(array) {
   const trueArr = [];
+  const length = myLength(array);
   let falsy = false;
-  let length = 0;
-  while (array[length] !== undefined) {
-    length += 1;
-  }
-
   for (let i = 0; i < length; i += 1) {
     falsy = Boolean(array[i]);
     if (falsy === true) {
-      trueArr[trueArr.length] = array[i];
+      const trueArrLength = myLength(trueArr);
+      trueArr[trueArrLength] = array[i];
     }
   }
   return trueArr;
