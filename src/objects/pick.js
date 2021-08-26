@@ -1,13 +1,15 @@
+/* eslint-disable guard-for-in */
 /* eslint-disable no-restricted-syntax */
-function pick(obj, ...keys) {
-  const objKeys = keys.flat();
+const pick = (obj, keys) => {
   const result = {};
-  for (const key in obj) {
-    if (objKeys.includes(key)) {
-      result[key] = obj[key];
+  for (const prop in obj) {
+    for (const key of keys) {
+      if (key === prop) {
+        result[prop] = obj[prop];
+      }
     }
   }
   return result;
-}
+};
 
 module.exports = pick;
