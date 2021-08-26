@@ -1,8 +1,12 @@
-function filter(obj, fn) {
-  const entries = Object.entries(obj).filter(fn);
-  return Object.fromEntries(entries);
-}
-
-const omitBy = (obj, fn) => filter(obj, ([key, val]) => !fn(val, key));
+/* eslint-disable no-restricted-syntax */
+const omitBy = (obj, fn) => {
+  const result = {};
+  for (const key in obj) {
+    if (!fn(obj[key])) {
+      result[key] = obj[key];
+    }
+  }
+  return result;
+};
 
 module.exports = omitBy;
