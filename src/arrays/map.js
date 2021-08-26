@@ -1,6 +1,6 @@
 const myLength = require('../shared/length');
 
-function map(array, callback) {
+const map = (array, callback) => {
   const result = [];
   const length = myLength(array);
   for (let index = 0; index < length; index += 1) {
@@ -8,6 +8,6 @@ function map(array, callback) {
     result[index] = callback(value, index, array);
   }
   return result;
-}
+};
 
 module.exports = map;

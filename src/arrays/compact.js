@@ -1,6 +1,6 @@
 const myLength = require('../shared/length');
 
-function compact(array) {
+const compact = (array) => {
   const trueArr = [];
   const length = myLength(array);
   let falsy = false;
@@ -12,6 +12,6 @@ function compact(array) {
     }
   }
   return trueArr;
-}
+};
 
 module.exports = compact;

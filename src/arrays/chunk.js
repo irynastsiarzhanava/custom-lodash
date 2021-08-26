@@ -3,7 +3,7 @@ const myPush = require('../shared/push');
 const mySplicedArray = require('../shared/splice-array');
 const myLength = require('../shared/length');
 
-function chunk(array, size) {
+const chunk = (array, size) => {
   const results = [];
 
   while (myLength(array)) {
@@ -13,6 +13,6 @@ function chunk(array, size) {
     array = mySplicedArray(array, 0, size);
   }
   return results;
-}
+};
 
 module.exports = chunk;

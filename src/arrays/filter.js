@@ -1,7 +1,7 @@
 const myLength = require('../shared/length');
 const myPush = require('../shared/push');
 
-function filter(array, callback) {
+const filter = (array, callback) => {
   const result = [];
   const length = myLength(array);
   for (let index = 0; index < length; index += 1) {
@@ -11,6 +11,6 @@ function filter(array, callback) {
     }
   }
   return result;
-}
+};
 
 module.exports = filter;

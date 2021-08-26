@@ -1,6 +1,6 @@
 const myLength = require('../shared/length');
 
-function find(array, callback) {
+const find = (array, callback) => {
   const length = myLength(array);
   for (let index = 0; index < length; index += 1) {
     const value = array[index];
@@ -9,6 +9,6 @@ function find(array, callback) {
     }
   }
   return undefined;
-}
+};
 
 module.exports = find;
