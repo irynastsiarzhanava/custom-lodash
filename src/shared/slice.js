@@ -8,7 +8,7 @@ function mySlice(array, start, end) {
   let stop = length - 1;
   const resultArr = [];
   if (start === undefined) {
-    return resultArr;
+    return data;
   }
   if (start < 0) {
     start += length;
