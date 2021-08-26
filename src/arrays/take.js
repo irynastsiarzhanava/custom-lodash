@@ -1,8 +1,13 @@
+const mySlice = require('../shared/slice');
+
 function take(array, num) {
   if (num === undefined) {
-    return array.slice(0, 1);
+    return mySlice(array, 0, 1);
   }
-  return array.slice(0, num);
+  if (num > array.length) {
+    return array;
+  }
+  return mySlice(array, 0, num);
 }
 
 module.exports = take;

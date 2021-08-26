@@ -1,9 +1,9 @@
-const mySplice = require('../shared/splice');
+const mySplicedArray = require('../shared/splice-array');
 
 function drop(array, num) {
   const { length } = array;
   if (num === undefined) {
-    return mySplice(array, 0, 1);
+    return mySplicedArray(array, 0, 1);
   }
   if (num > length) {
     return [];
@@ -11,7 +11,7 @@ function drop(array, num) {
   if (num === 0) {
     return array;
   }
-  return mySplice(array, 0, num);
+  return mySplicedArray(array, 0, num);
 }
 
 module.exports = drop;
